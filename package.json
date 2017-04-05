@@ -2,12 +2,17 @@
   "name": "gl-md-syntax",
   "theme": "syntax",
   "version": "0.0.0",
-  "description": "A short description of your syntax theme",
+  "description": "markdown syntax theme. Markdown Extra, gfm.",
   "keywords": [
     "syntax",
-    "theme"
+    "theme",
+    "gfm",
+    "markdown",
+    "MarkdownExtra",
+    "colorful",
+    "dark"
   ],
-  "repository": "https://github.com/atom/gl-md-syntax",
+  "repository": "https://github.com/uduki-oh-yeah/atom-gl-md-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
