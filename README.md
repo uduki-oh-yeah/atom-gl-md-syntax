@@ -12,7 +12,7 @@ Good looking markdown syntax theme.
 
 ## Screenshot
 
-![screenshot](screenshot.png)
+![screenshot](https://raw.githubusercontent.com/uduki-oh-yeah/atom-gl-md-syntax/master/screenshot.png)
 
 ## License
 
