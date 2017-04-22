@@ -72,6 +72,15 @@ def foo(x)
 end
 ~~~~~~~
 
+~~~~~~~ java
+private static final int HOGE = 888;
+int getHoge(Integer num){
+  Integer num2 = 999;
+  System.out.println("Test" + )
+  return num2 + num + HOGE;
+}
+~~~~~~~
+
 <!--
 ~~~ erb
 <% wrap_layout :layout do %>

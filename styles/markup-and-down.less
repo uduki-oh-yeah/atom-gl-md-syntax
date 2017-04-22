@@ -8,16 +8,16 @@
 // whatever you want. It's best to re-use color variables set in the rest of
 // your theme.
 
-@_background:     @white;
-@_text:           @very-light-gray;
-@_syntax:         @orange;
-@_syntax_alt:     darken(@_syntax, 10%);
-@_content:        @light-blue;
-@_variable:       @dark-blue;
-@_constant:       @dark-purple;
-@_highlight:      @light-orange;
-@_comment:        @cookie;
-@_neutral:        mix(@_text, @_background);
+// @_background:
+// @_text:
+// @_syntax:
+// @_syntax_alt:
+// @_content:
+// @_variable:
+// @_constant:
+// @_highlight:
+// @_comment:
+// @_neutral:
 
 
 
@@ -28,9 +28,13 @@
 .markup {
 
   &.bold,
-  &.heading,
   &.strong.emphasis {
     font-weight: bold;
+  }
+
+  &.heading {
+    font-weight: bold;
+    border-bottom: dashed 1px @red;
   }
 
   &.italic,
@@ -49,33 +53,33 @@
   &.heading,
   &.substitution,
   &.changed {
-    color: @_syntax;
+    color: @red;
   }
 
   &.inserted,
   &.addition,
   &.quote {
-    color: @_content;
+    color: @cookie;
   }
 
   &.deletion,
   &.hr {
-    color: @_constant;
+    color: @cookie;
   }
 
   &.link {
-    color: @_variable;
+    color: @dark-purple;
   }
 
   &.list {
     & > .punctuation {
-      color: @_syntax_alt;
+      color: darken(@light-blue, 10%);;
     }
   }
 
   &.raw,
   &.code {
-    color: @_neutral;
+    color: mix(@very-light-gray, @white);
   }
 
  .punctuation {
@@ -94,7 +98,6 @@
 
 .text.md {
   .md {
-
     &.heading {
       > .punctuation {}
       &.empty {
@@ -102,8 +105,12 @@
       }
     }
 
-    &.hr {}
-    &.quote {}
+    &.hr {
+      color: @cookie;
+    }
+    &.quote {
+      color: @dark-purple;
+    }
 
     &.link {
       &.text {}
@@ -155,20 +162,24 @@
 
     &.list {
       > .punctuation {
-        &.checkbox {}
+        &.checkbox {
+          color: @light-orange;
+        }
       }
 
-      &.unordered {}
+      &.unordered {
+      }
       &.ordered {}
       &.empty {}
 
       &.task {
         &.completed {
-          opacity: 0.2;
+          opacity: 0.3;
         }
       }
 
-      &.definition {}
+      &.definition {
+      }
     }
 
     &.code {
@@ -178,7 +189,9 @@
         &.info {}
       }
 
-      &.raw {}
+      &.raw {
+        background: linear-gradient(transparent 70%, @dark-blue 70%);
+      }
     }
 
     &.constant {
@@ -197,6 +210,7 @@
 
     &.table {
       > .punctuation {
+        color: @dark-blue;
         &.alignment {}
       }
     }
