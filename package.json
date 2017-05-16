@@ -1,7 +1,7 @@
 {
   "name": "gl-md-syntax",
   "theme": "syntax",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "markdown syntax theme. Markdown Extra, gfm.",
   "keywords": [
     "syntax",
