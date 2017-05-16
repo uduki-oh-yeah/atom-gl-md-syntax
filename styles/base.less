@@ -64,7 +64,7 @@ atom-text-editor .search-results .marker.current-result .region {
 // Syntax styles
 
 .syntax--comment {
-  color: @gray;
+  color: lighten(@dark-purple, 10%);
 }
 
 .syntax--keyword {
@@ -124,7 +124,7 @@ atom-text-editor .search-results .marker.current-result .region {
 }
 
 .syntax--invalid.syntax--illegal {
-  background-color: @red;
+  background-color: @dark-purple;
   color: @syntax-background-color;
 }
 
@@ -148,7 +148,8 @@ atom-text-editor .search-results .marker.current-result .region {
 .syntax--punctuation {
   &.syntax--definition {
     &.syntax--comment {
-      color: @gray;
+      color: lighten(@dark-purple, 10%);
+
     }
 
     &.syntax--string,
